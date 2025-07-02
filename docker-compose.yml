@@ -1,0 +1,10 @@
+
+services:
+  api:
+    build: .
+    container_name: aoi
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta o volume nomeado no diretório de dados para persistir o banco SQLite
+      - .:/app
